@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f0c29;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  padding: 60px 20px 30px;
+  animation: fadeInDown 1s ease;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  width: 85%;
+  max-width: 400px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(150, 80, 255, 0.5);
+}
+
+.feature-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-card h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.feature-card p {
+  color: #bbb;
+  font-size: 1rem;
+}
+
+/* Tournament Section */
+.tournaments {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.tournaments h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tournament-card {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 15px auto;
+  width: 85%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.tournament-card:hover {
+  transform: scale(1.05);
+}
+
+.join-btn {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #8e2de2;
+}
+
+.bg-purple { border-left: 5px solid #8e2de2; }
+.bg-blue { border-left: 5px solid #007bff; }
+.bg-orange { border-left: 5px solid #ffa500; }
+.bg-green { border-left: 5px solid #00ff88; }
+
+/* Community Section */
+.community {
+  margin-top: 60px;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.community h2 {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.community p {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  padding: 12px 35px;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #8e2de2;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  padding-bottom: 30px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
